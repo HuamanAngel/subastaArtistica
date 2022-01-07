@@ -1,0 +1,271 @@
+.imagen-avatar {
+    width: 100%;
+    height: 100px;
+}
+
+#cuadro-texto-input {
+    background-color: #EEEEEE;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 1px;
+    width: 80%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.ajustar-label-1 {
+    float: left;
+}
+
+.ajustar-label-2 {
+    float: right;
+}
+
+.etiqueta-destacado {
+    background-color: #D9534F;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 5px 5px 5px;
+    font-size: 0.6em;
+}
+
+.nombre-url {
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.evitar-float {
+    clear: both;
+}
+
+.label-2-new {
+    background-color: #4F2F2C;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0px 5px 5px 5px;
+    text-align: center;
+    font-size: 0.6em;
+}
+
+.boton-color {
+    background-color: #4F2F2C;
+    color: white;
+    font-weight: bold;
+}
+
+.boton-color-2 {
+    background-color: #801022;
+    color: white;
+    font-weight: bold;
+}
+
+.comentario-now-text {
+    width: 100%;
+    height: 10em;
+}
+
+.comentario-salida {
+    background-color: white;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.comentario-contenido {
+    padding: 15px;
+    clear: both;
+}
+
+.icon-button-like {
+    font-size: large;
+}
+
+.linea-separadora-centro-abajo {
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+
+.comt-titulo-1 {
+    margin-top: 40px;
+}
+
+.div-disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+
+#contadorCaracteres {
+    clear: both;
+    text-align: right;
+    padding: 5px;
+    color: #555555;
+    font-style: italic;
+}
+
+.div-ocultar {
+    display: none;
+}
+
+.div-mostrar {
+    display: inline-block;
+}
+
+.texto-result-comment {
+    border: 0px solid black;
+    background-color: white;
+    display: block;
+    box-sizing: padding-box;
+    overflow: auto;
+    width: 30rem;
+    padding: .5rem;
+    min-height: 3rem;
+    white-space: pre-line;
+}
+
+.image-perso{
+    height: 200px !important;
+}
+
+.line-separation-1{
+    width: 100%;
+    height: 1px;
+    background-color: #000000;
+}
+.info-prod-div{
+    height: 380px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+.pro-registrado{
+    background-color: #D9534F !important;
+}
+
+
+.wSaTQd {
+    overflow: hidden;
+}
+.lSXt5d {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+.kq6fXc {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAAXUlEQVR4AaXRwQ3AIAiF4Y7AKG70r8KojOAG1DYxcDB5Teq74RdRvFLkG3gWhhPkSuDYKnXAYJItk9EAVtuNWAHf5bfZJl4gjiAK5DkdnE5I3UJfUj9TD0qP+vdv3sq2BlCSAd3JAAAAAElFTkSuQmCC);
+    height: 16px;
+    width: 16px;
+}
+.X1PzMe {
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    position: relative;
+    top: -2px;
+}
+h2 {
+    font-size: 2.2em;
+    line-height: 1.1;
+    font-family: 'Poppins', cursive;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+}
+.X43Kjb {
+    font-weight: 500;
+}
+.p2TkOb {
+    color: #aaa;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    margin-left: 2px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.star_content {
+    margin-bottom: 5px;
+    float: left;
+    width: 100%;
+}
+ 
+.star {
+    overflow: hidden;
+    float: left;
+    margin: 0 1px 0 0;
+    width: 16px;
+    height: 18px;
+    cursor: pointer;
+}
+ 
+.star a {
+    display: block;
+    width: 100%;
+    background-position: 0 0;
+}
+
+
+    /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+    .rating-group {
+      display: inline-flex;
+    }
+    
+    /* make hover effect work properly in IE */
+    .rating__icon {
+      pointer-events: none;
+    }
+    
+    /* hide radio inputs */
+    .rating__input {
+     position: absolute !important;
+     left: -9999px !important;
+    }
+    
+    /* hide 'none' input from screenreaders */
+    .rating__input--none {
+      display: none
+    }
+  
+    /* set icon padding and size */
+    .rating__label {
+      cursor: pointer;
+      padding: 0 0.1em;
+      font-size: 2rem;
+    }
+    
+    /* set default star color */
+    .rating__icon--star {
+      color: orange;
+    }
+  
+    /* if any input is checked, make its following siblings grey */
+    .rating__input:checked ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+    
+    /* make all stars orange on rating group hover */
+    .rating-group:hover .rating__label .rating__icon--star {
+      color: orange;
+    }
+  
+    /* make hovered input's following siblings grey on hover */
+    .rating__input:hover ~ .rating__label .rating__icon--star {
+      color: #ddd;
+    }
+  
+  
+  
+
+
+
