@@ -36,7 +36,8 @@
     <link rel="stylesheet" href="css/styleProduct.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>  
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
         
 @endsection
 
@@ -252,10 +253,32 @@
               <div style="clear: both"></div>
             </div>
               
-                
+
+            <div style="height: 500px; width: 100%; background-color: black; clear: both;" id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active ">
+                  <img class="d-block w-100 " style="height: 500px" src="@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name1 }} @endif" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" style="height: 500px" src="@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name1 }} @endif" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" style="height: 500px" src="@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name1 }} @endif" alt="Third slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>            
+
               <!-- Swiper -->
-              <div style="height: 500px; width: 100%; background-color: black; clear: both;">
-                  <div class="swiper-container gallery-top">
+              {{-- <div style="height: 500px; width: 100%; background-color: black; clear: both;">
+                  <div class="swiper-container">
                       <div class="swiper-wrapper">
                           <div class="swiper-slide flex"><img src="@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name1 }} @endif" alt="" class="img-ajustada"></div>
                           <div class="swiper-slide flex"><img src="@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name2 }} @endif" alt="" class="img-ajustada"></div>
@@ -273,7 +296,7 @@
                           <div class="swiper-slide" style="background-image:url(@if($prod->imagen!=null){{ $prod->imagen }} @else {{ $prod->image_name4 }} @endif)"></div>
                       </div>
                   </div>
-              </div>
+              </div> --}}
               <div id="vendedor">
                   Ofrecido por <span><a href="{{ route('comentarios-now', $prod->productoUserPropietario->id) }}">{{ $prod->productoUserPropietario->usuario }}</a></span>
               </div>
