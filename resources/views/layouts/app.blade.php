@@ -337,7 +337,7 @@
 {{-- "badge badge-danger"
 dropdown-item bg-danger --}}
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <form method="POST" action="{{ route('suscripcion.usuario') }}">
+                                {{-- <form method="POST" action="{{ route('suscripcion.usuario') }}">
                                     {{ csrf_field() }}
                                     @csrf
                                 @if(Auth::user()->suscripcion == "1")
@@ -358,7 +358,7 @@ dropdown-item bg-danger --}}
                                         Mi perfil
                                     </a>
                                 @endif
-                                </form>
+                                </form> --}}
                                 <a class="dropdown-item" href="{{ route('productos.favoritos') }}">
                                     Mis productos favoritos
                                 </a>

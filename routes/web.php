@@ -1,7 +1,6 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\PruebaController;
 use App\Http\Controllers\SubastaRapController;
 use App\Http\Controllers\userController ;
 use App\Http\Controllers\RegistroProductoController;
@@ -11,14 +10,9 @@ use App\Http\Controllers\userGuest;
 use App\Http\Controllers\MailController;
 use App\Http\Controllers\MedioNegoController;
 use App\Http\Controllers\HelpController;
-use Illuminate\Http\Request;
 
 
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\MessageReceived;
-use App\Http\Livewire\ProductosComponente;
-use App\Http\Livewire\busquedaFiltro;
 
 
 Route::get('/', function () {

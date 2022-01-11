@@ -52,16 +52,9 @@ class HomeController extends Controller
 
     public function viewproduct($idpro)
     {
-
-        // if(auth()->user() ==null){
-        //     return redirect()->route('guestPuja',['idpro'=>]);
-        // }
         if(auth()->user()==null){
-
         }else{
-            $listaFavoritos = App\Models\User::where('id', '=', auth()->id())->first();
-
-            $listaFavoritos = App\Models\User::where('id','=',auth()->id())->first();
+            $listaFavoritos = auth()->user();
             $listaUsuario = $listaFavoritos->favoritos;
             $listaInicio = str_replace("[", "", $listaUsuario);
             $listaFin = str_replace("]", "", $listaInicio);
