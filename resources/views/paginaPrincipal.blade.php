@@ -42,15 +42,15 @@
 
 <div class="c-hero" style="padding-top:0px;">
     <div class="c-hero__center">
-        <h1 class="c-hero__title">SUBASTAS ONLINE D'REMATE</h1>
+        <h1 class="c-hero__title">SUBASTAS ONLINE</h1>
         <h2 class="c-hero__subtitle">
-            ENCUENTRA TODO TIPO DE PRODUCTOS EN NUESTRA PÁGINA
+            ENCUENTRA TODO TIPO DE CREACIONES ARTÍSTICAS
         </h2>
         @auth
           <a class="red button register" href="{{ route('productosPopulares') }}">Productos populares</a>
         @else
           <h5><span class="uppercase">Registrate ahora y empieza</span></h5>
-          <a class="red button register" href="/register">REGISTRARSE</a> 
+          <a class="red button register" href="/register">REGISTRARME</a> 
         @endauth
         
         <div class="c-hero__feats">
@@ -75,6 +75,7 @@
         </div>
     </div>
 </div>
+
 <section class="c-callout" style="background-color: #000000;;">
     <div class="c-callout__wrap">
         <span class="c-callout__icon" style="background-image:url(https://auctionhouselondon.co.uk/wp-content/uploads/2015/11/newsletter-3.png);">
@@ -98,14 +99,14 @@
 
 <section class="section section-lg text-center" style="position: relative;">
         <div class="shell-wide">
-          <h3>Cómo funciona</h3>
+          <h3>¿Cómo funciona?</h3>
           <div class="divider divider-default"></div>
           <div class="range range-xs-center range-50">
             <div class="cell-sm-9 cell-md-6 cell-lg-3">
               <div class="thumbnail-classic unit unit-sm-horizontal unit-md-vertical unit-md-horizontal unit-lg-vertical">
                 <div class="thumbnail-classic-icon unit-left"><span class="icon">01</span></div>
                 <div class="thumbnail-classic-caption unit-body">
-                  <h6 class="thumbnail-classic-title">REGISTRATE</h6>
+                  <h6 class="thumbnail-classic-title">REGÍSTRATE</h6>
                   <hr class="divider divider-default divider-sm">
                   <p class="thumbnail-classic-text">Para comenzar a utilizar nuestra página, deberá registrarse. ¡Es completamente gratis!</p>
                 </div>
@@ -150,7 +151,7 @@
     <div class="container aos-init aos-animate" data-aos="fade-up">
         <div class="section-title" style="padding-bottom: 30px;">
             <h2>¿Quiénes somos?</h2>
-            <p>Somos una empresa dedicada a las subastas de productos en linea, que permite a los miembros participar en emocionantes subastas en vivo - en cualquier momento y desde cualquier lugar.</p>
+            <p>Somos una empresa dedicada a las subastas de productos en linea, que permite a los miembros participar en emocionantes subastas en vivo en cualquier momento y desde cualquier lugar.</p>
         </div>
         <div class="row content">
             <div class="col-lg-6">

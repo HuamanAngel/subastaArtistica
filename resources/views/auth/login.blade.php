@@ -23,13 +23,13 @@
                             <div class="style-tarjeta">
                                 <div class="card-body">
 
-                                    <div style="text-align:center;">
+                                    <!-- <div style="text-align:center;">
                                         <img class="rounded-circle" style="background-color:#FFF; width: 8rem; height: 8rem; object-fit:contain;" src="img/assets/subasta_1.jpg"
                                             alt="logo-dRemate">
 
 
-                                    </div><br>
-                                    <h5 class="text-center titulo-1">Ingresar</h5>
+                                    </div><br> -->
+                                    <h5 class="text-center titulo-1">Iniciar Sesión</h5>
                                     <form class="form-signin" method="POST" action="{{ route('login') }}">
                                         @csrf
                                         <br>
@@ -69,23 +69,21 @@
                                             <label class="custom-control-label" for="customCheck1">Recordar
                                                 Contraseña</label>
                                         </div>
-                                        <hr class="lineas-separacion">
+                                        <!--<hr class="lineas-separacion">-->
 
                                         <button class="btn btn-lg btn-primary btn-block text-uppercase"
                                             type="submit">Ingresar</button>
                                         <hr class="my-2">
                                         @if (Route::has('password.request'))
                                             <a class="btn btn-link" href="{{ route('password.request') }}">
-                                                Te olvidaste la contraseña?
+                                                Olvidé mi constraseña
                                             </a>
                                         @endif
-
-                                        <!--
-                                                                                                                                                                                                                                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
+                                                                                                                                                                                                                                            <!-- <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
                                                                                                                                                                                                                                             class="fab fa-google mr-2"></i> Sign in with Google</button>
                                                                                                                                                                                                                                             <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i
                                                                                                                                                                                                                                             class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                                                                                                                                                                                                                                            -->
+                                                                                                                                                                                        -->
                                     </form>
                                 </div>
                             </div>

@@ -13,11 +13,16 @@
   
     /*background: linear-gradient(to right, #0062E6, #33AEFF);
     */  
-      background: url("../img/assets/antique-1125467_1920.jpg");
+
+      background-color: white;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
   }
   
 .main-background{
   background: rgba(255,255,255,0.60);
+  padding-top: 2rem;
 
   }
 
@@ -28,14 +33,33 @@
   }
   .cuadro-registro{
       border-radius: 5px;
+
   }
   
+  .register-image{
+    width: 80%;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;	
+    float: right;
+  }
   
   .card-signin {
+    width: 80%;
     border: 0;
     border-radius: 1rem;
     box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
     overflow: hidden;
+  }
+
+  @media (max-width: 1250px) {
+    .card-signin {
+      width: 100%;
+      margin: auto;
+    }
+    .left-column {
+      display: none;
+    }
   }
   
   .card-signin .card-title {

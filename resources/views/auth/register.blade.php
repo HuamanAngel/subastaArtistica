@@ -11,20 +11,22 @@
 @endsection
 
 @section('contenidoCSS')
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 @endsection
-
 
 @section('contenido')
 
     <main class="main-contenido-central">
         <div class="main-background">
-            <div class="container cuadro-registro">
+            <div class="container-fluid cuadro-registro">
                 <div class="row">
-                    <div class="col-lg-10 col-xl-9 mx-auto">
-                        <div class="card card-signin flex-row my-5">
-                            <div class="card-img-left d-none d-md-flex">
-                            </div>
+                    <div class="col left-column">
+                        <img class="register-image" src="https://http2.mlstatic.com/cuadro-en-tela-idea-arte-abstracto-moderno-decorativo-D_NQ_NP_777394-MLM28796695238_112018-F.jpg" alt="register-image">
+                    </div>
+                    <div class="col"><div class="card card-signin flex-row my-5">
+                            <!-- <div class="card-img-left d-none d-md-flex">
+                            </div> -->
                             <div class="card-body">
                                 <h5 class="text-center titulo-1">Registro</h5>
                                 <br>
@@ -106,7 +108,7 @@
                                                 <div class="input-group-prepend">
                                                     <div class="input-group-text"><i class="fa fa-phone text-info"></i></div>
                                                 </div>
-                                            <input class="form-control" type="number" name="telefono" placeholder="Telefono: 18491115555"  required name="telefono " id="telefono" >
+                                            <input class="form-control" type="number" name="telefono" placeholder="Número de teléfono"  required name="telefono " id="telefono" >
                                             </div>
                                         </div>
 
@@ -141,7 +143,7 @@
                                         <input type="password" id="inputConfirmPassword" class="form-control"
                                             placeholder="Password" name="password_confirmation" required
                                             autocomplete="new-password">
-                                        <label for="inputConfirmPassword">Repetir Contreseña</label>
+                                        <label for="inputConfirmPassword">Confirmar Contreseña</label>
                                     </div>
                                     <div class="form-inline mb-2">
                                         <input class="mr-2" type="checkbox" value="1" name="suscripcion">
@@ -150,18 +152,13 @@
                                     </div>
 
                                     <button class="btn btn-lg btn-primary btn-block text-uppercase"
-                                        type="submit">Registrarse</button>
-                                    <a class="d-block text-center mt-2 small" href="{{ route('login') }}">Iniciar sesiòn</a>
-                                    <hr class="my-4">
-                                    <!--
-                                                                                                                                                                                                                                                                            <button class="btn btn-lg btn-google btn-block text-uppercase" type="submit"><i
-                                                                                                                                                                                                                                                                                    class="fab fa-google mr-2"></i> Sign in with Google</button>
-                                                                                                                                                                                                                                                                            <button class="btn btn-lg btn-facebook btn-block text-uppercase" type="submit"><i
-                                                                                                                                                                                                                                                                                    class="fab fa-facebook-f mr-2"></i> Sign in with Facebook</button>
-                                                                                                                                                                                                                                                                            -->
+                                        type="submit">Registrarme</button>
+                                    <a class="d-block text-center mt-2 small" href="{{ route('login') }}">Ya tengo una cuenta</a>
                                 </form>
                             </div>
-                        </div>
+                        </div></div>
+                    <div class="col-lg-10 col-xl-9" style="display: none;">
+                        
                     </div>
                 </div>
             </div>
@@ -171,4 +168,5 @@
 @section('contenidoJSabajo')
 
     <!-- Colocar js abajo-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 @endsection
