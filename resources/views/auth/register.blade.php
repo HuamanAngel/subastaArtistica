@@ -11,8 +11,6 @@
 @endsection
 
 @section('contenidoCSS')
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 @endsection
 
 @section('contenido')
@@ -145,11 +143,10 @@
                                             autocomplete="new-password">
                                         <label for="inputConfirmPassword">Confirmar Contreseña</label>
                                     </div>
-                                    <div class="form-inline mb-2">
+                                    {{-- <div class="form-inline mb-2">
                                         <input class="mr-2" type="checkbox" value="1" name="suscripcion">
-                                        {{-- <input class="mr-2" type="checkbox" value="0" name="suscripcion" checked> --}}
                                         <label>Deseo suscribirme a D'REMATE</label>
-                                    </div>
+                                    </div> --}}
 
                                     <button class="btn btn-lg btn-primary btn-block text-uppercase"
                                         type="submit">Registrarme</button>

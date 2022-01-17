@@ -26,7 +26,7 @@
                 success: function(response) {
                     Swal.fire({
                         html: `<h4 style="font-weight: lighter">Ya no volveran a mostrarse mensajes de ayuda</h4>
-                                <h4 class="text-center">(°<>°)</h4>`,
+                                `,
                         title: "¡No mas ayuda!",
                         text: "Texto",
                         icon: "success",

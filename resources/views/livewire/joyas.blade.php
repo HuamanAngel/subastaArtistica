@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Joyas</option>
+                                <option style="background: #c72d32;">Retratos</option>
                             </select>
                         </div>
                     </div>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    {{-- <div>
                         <h5>Condicion</h5>
                         <!--Select-->
                         @error('condicion')
@@ -69,7 +69,7 @@
                                 <option value="Usado" style="background: #c72d32;">Usado</option>
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div>
 

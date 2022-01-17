@@ -18,10 +18,10 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categorias')->insert(['nombre_categoria'=>'Tecnología']);
-        DB::table('categorias')->insert(['nombre_categoria'=>'Hogar']);
-        DB::table('categorias')->insert(['nombre_categoria'=>'Electrodomésticos']);
-        DB::table('categorias')->insert(['nombre_categoria'=>'Joyas']);
-        DB::table('categorias')->insert(['nombre_categoria'=>'Instrumento musical']);
+        DB::table('categorias')->insert(['id'=>1 ,'nombre_categoria'=>'Retratos']);
+        DB::table('categorias')->insert(['id'=>2 ,'nombre_categoria'=>'Paisajes']);
+        DB::table('categorias')->insert(['id'=>3 ,'nombre_categoria'=>'Cuerpo Humano']);
+        DB::table('categorias')->insert(['id'=>4 ,'nombre_categoria'=>'Obras reconocidas']);
+        DB::table('categorias')->insert(['id'=>5 ,'nombre_categoria'=>'Otros']);
     }
 }

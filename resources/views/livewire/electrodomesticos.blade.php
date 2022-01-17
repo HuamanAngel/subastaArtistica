@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Electrodomésticos</option>
+                                <option style="background: #c72d32;">Otros</option>
                             </select>
                         </div>
                     </div>
@@ -55,9 +55,8 @@
                         </div>
                     </div>
 
-                    <div>
+                    {{-- <div>
                         <h5>Condicion</h5>
-                        <!--Select-->
                         @error('condicion')
                         <div class="alert alert-danger" role="alert">
                             {{ $message }}
@@ -69,7 +68,7 @@
                                 <option value="Usado" style="background: #c72d32;">Usado</option>
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div>
 

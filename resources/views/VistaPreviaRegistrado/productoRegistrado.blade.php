@@ -37,17 +37,17 @@
                     <div class="col-md-4">
                         <h5 class="font-weight-bold">Categoría:</h5>
                         @if($datosProducto->categoria_id==1)
-                            <p>Tecnología</p>
+                            <p>Retratos</p>
                         @elseif($datosProducto->categoria_id==2)
-                            <p>Hogar</p>
+                            <p>Paisajes</p>
                         @elseif($datosProducto->categoria_id==3)
-                            <p>Electrodomésticos</p>
+                            <p>Cuerpo Humano</p>
                         @elseif($datosProducto->categoria_id==4)
-                            <p>Joyas</p>
+                            <p>Obras reconocidas</p>
                         @elseif($datosProducto->categoria_id==5)
-                            <p>Instrumento musical</p>
+                            <p>Otros</p>
                         @else
-                            <p>Juguetes</p> 
+                            <p>Otros</p> 
                         @endif
                     </div>
                     <div class="col-md-4">

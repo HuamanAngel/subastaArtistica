@@ -34,11 +34,13 @@
                     <label for="formGroupExampleInput"><h3>Categoría</h3></label><br>
                     <small>Escoja su categoría</small>
                     <select name="categoria_id" class="form-control" required>
-                        <option value="1" selected>Tecnología</option>
-                        <option value="2">Hogar</option>
-                        <option value="3">Electrodomésticos</option>
-                        <option value="4">Joyas</option>
-                        <option value="5">Instrumento musical</option>
+                        @foreach(App\Models\Categoria::all() as $categoria)
+                            @if($categoria->id == 1)
+                                <option value="{{ $categoria->id }}" selected>{{ $categoria->nombre_categoria }}</option>                        
+                            @else
+                                <option value="{{ $categoria->id }}">{{ $categoria->nombre_categoria }}</option>                        
+                            @endif
+                        @endforeach
                     </select>
                     <div class="invalid-feedback">
                         Seleccione una cateroría
@@ -100,11 +102,12 @@
                 </div>
             
                 <div class="col-sm-12">
-                    <h3>Condicion</h3>
-                    <select class="form-control" name="condicion">
+                    {{-- <h3>Condicion</h3> --}}
+                    <input type="hidden" name="condicion" value="Nuevo">
+                    {{-- <select class="form-control" name="condicion">
                         <option value="Nuevo" selected>Nuevo</option> 
                         <option value="Usado">Usado</option>
-                    </select>
+                    </select> --}}
                     <br>
                     <div class="linea"></div>
                 </div>   
@@ -179,13 +182,13 @@
                 <small class="form-text text-muted">Ingrese la cantidad en Soles (S/) y máximo con dos decimales. Ejemplo: 25.50</small>
                 @error('precio_inicial')
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Precio mínimo 10.00 - Precio máximo 999.99
+                Precio mínimo 10.00 - Precio máximo 999999.00
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
                 </div>
                 @enderror
-                <input type="text" name="precio_inicial" value="{{ old('precio_inicial') }}" class="form-control" id="precioInicial" placeholder="Precio mínimo 10.00 - Precio máximo 999.99" required>
+                <input type="text" name="precio_inicial" value="{{ old('precio_inicial') }}" class="form-control" id="precioInicial" placeholder="Precio mínimo 10.00 - Precio máximo 999999.00" required>
                 <div class="invalid-feedback">
                     Not nice >:v
                 </div>
