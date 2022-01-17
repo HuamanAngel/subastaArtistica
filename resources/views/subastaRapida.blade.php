@@ -75,7 +75,7 @@
             @endauth
 
                 @guest
-                <a href="{{ url('login') }}" role="button" class="btn btn-info" ><i class="fa fa-book">
+                <a href="{{ url('register') }}" role="button" class="btn btn-info" ><i class="fa fa-book">
                     Registrarse</i></a>
                 <a href="{{ url('login') }}" role="button" class="btn btn-info"><i class="fa fa-user">
                     Iniciar sesion</i></a>

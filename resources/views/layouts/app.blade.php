@@ -306,7 +306,7 @@
             
         
             <ul class="navbar-nav d-none" style="align-items: center;">
-                <li class="nav-item @if($stringRuta == 'welcome') active active-2  @endif "><a class="nav-link" href="{{ route('welcome') }}">Home</a>
+                <li class="nav-item @if($stringRuta == 'welcome') active active-2  @endif "><a class="nav-link" href="{{ route('welcome') }}">Inicio</a>
                 </li>
                 @auth
                 <li class="nav-item @if($stringRuta == 'registroSubasta-now') active active-2  @endif "><a class="nav-link" href="{{ route('registroSubasta-now') }}">Subastar producto</a>
@@ -322,7 +322,7 @@
                 <li class="nav-item @if($stringRuta == 'login') active active-2  @endif"><a class="nav-link" href="{{ route('login') }}">Ingresar</a>
                 </li>
                 @if (Route::has('register'))
-                <li class="nav-item @if($stringRuta == 'register') active active-2  @endif"><a class="nav-link" href="{{ route('register') }}">Registrarse</a>
+                <li class="nav-item @if($stringRuta == 'register') active active-2  @endif"><a class="nav-link" href="{{ route('register') }}">Registrarme</a>
                 </li>
 
                 @endif
@@ -528,13 +528,13 @@ dropdown-item bg-danger --}}
             </li>
             </ul>
             <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="/" style="color:#343a40;font-weight: bold;">Home</a>
+            <li class="nav-item"><a class="nav-link" href="/" style="color:#343a40;font-weight: bold;">Inicio</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="/subastaRapida" style="color:#343a40;font-weight: bold;">Subasta Rápida</a>
             </li>
             <li class="nav-item"><a class="nav-link" href="/register" style="color:#343a40;font-weight: bold;">Ingresar</a>
             </li>
-            <li class="nav-item"><a class="nav-link" href="/register" style="color:#343a40;font-weight: bold;">Registrarse</a>
+            <li class="nav-item"><a class="nav-link" href="/register" style="color:#343a40;font-weight: bold;">Registrarme</a>
             </li>
             </ul>
         </div>
@@ -546,8 +546,8 @@ dropdown-item bg-danger --}}
     @livewireScripts
 
     @yield('contenido')
-    <!--Footer-->
-
+    
+<!--Footer-->
 <footer id="footer">
 
 
@@ -558,11 +558,11 @@ dropdown-item bg-danger --}}
             <div class="col-md-4">
                 <div class="wow fadeInDown" data-wow-delay="0.1s">
                     <div class="widget">
-                        <h4>CONTENIDO</h4>
+                        <h4>Acerca de</h4>
                         <ul>
                             <div class="copyright">
                                 
-                                <a href="#" data-toggle="modal" style="color: #dee2e6" data-target="#ventanaModalQuienes">¿Quiénes somos? (Version extendida)</a>                            
+                                <a href="#" data-toggle="modal" style="color: #dee2e6" data-target="#ventanaModalQuienes">Nosotros ¿Quiénes somos?</a>                            
                             </div>
                                 {{-- <li><a href="#" data-toggle="modal" data-target="#ventanaModalPolitica">Política y privacidad</a></li> --}}
                             {{-- <li><a href="#" data-toggle="modal" data-target="#ventanaModalAtencion">Atención al cliente</a></li> --}}
@@ -596,7 +596,7 @@ dropdown-item bg-danger --}}
                     <div class="widget">
                         <h4></h4>
                         <div class="copyright">
-                            © Copyright <strong><span>D'REMATE</span></strong> 2020 - 3030. All Rights Reserved
+                            © Copyright D'REMATE 2022. All Rights Reserved
                           </div>
                     
                     </div>
@@ -617,7 +617,7 @@ dropdown-item bg-danger --}}
             <div class="col-sm-12">
                 <div class="modal-header nav-horizontal-simple">
                     <label for="">
-                        Conocenos
+                        Conócenos
                         <span class="fa-stack fa-lg">
                             <i class="fa fa-users fa-stack-1x"></i>
                         </span>
@@ -640,13 +640,14 @@ dropdown-item bg-danger --}}
                         <div class="col-sm-12 div-1-conocenos" style="text-align: center;">
                             <h2>d'Remate</h2>
                             <h4>¿Quiénes somos?</h4>
-                            <p style="font-family: sans-serif;">Somos un grupo de estudiantes sanmarquinos con el objetivo de permitir que todo el público pueda realizar subastas de manera sencilla a través de nuestra página web.
+                            <p style="font-family: sans-serif;">Somos un grupo de estudiantes sanmarquinos con el objetivo de permitir
+                             que el público pueda realizar subastas de sus creaciones artísticas de manera sencilla.
                                 <br>
                             </p>
                             <h4>¿Cómo nació la idea?</h4>
                             <p style="font-family: sans-serif;">
-                                Después de multiples reuniones donde se discutia como hacer que la persona sin conocimientos tecnicos
-                                pueda subastar un producto, sin tanto tramite y directamente
+                                Después de multiples reuniones donde se discutía cómo hacer que la persona pueda vender
+                                sus creaciones artísticas, fácil y rápidamente.
                             
                             </p>
 
@@ -669,7 +670,7 @@ dropdown-item bg-danger --}}
                                     </span>
                                     <hr class="linea-divide">
                                     <h4 class="label-1-title">Justicia</h4>
-                                    <p>Permitimos a cualquier persona registrarse en la aplicacion web</p>                                    
+                                    <p>Permitimos a cualquier persona registrarse en la aplicación web</p>                                    
                                 </div>
                                 <div class="col-sm-4">
                                     <span class="fa-stack fa-lg">
@@ -687,7 +688,7 @@ dropdown-item bg-danger --}}
                                     </span>
                                     <hr class="linea-divide">
                                     <h4 class="label-1-title">Solidaridad</h4>         
-                                    <p>Ayudamos a las personas comunes subastar productos</p>                                                               
+                                    <p>Ayudamos a las personas a compartir sus creaciones</p>                                                               
                                 </div>
                                 <div class="col-sm-6">
                                     
@@ -696,7 +697,7 @@ dropdown-item bg-danger --}}
                                     </span>
                                     <hr class="linea-divide">
                                     <h4 class="label-1-title">Respeto</h4>
-                                    <p>Todos los comentarios y/o sugerencias seran tratados con respeto</p>                                                                        
+                                    <p>Todos los comentarios y/o sugerencias serán tratados con respeto</p>                                                                        
                                 </div>
                             </div>
                         </div>
@@ -704,12 +705,12 @@ dropdown-item bg-danger --}}
                             <ul style="list-style: none">
                                 <li style="font-family: sans-serif;;line-height : 1;">
                                     <span class="fa-stack fa-lg" style="float: left; color:rgba(255,0,0,0.8);"><i class="fa fa-bullseye fa-stack-2x"></i></span>
-                                    Permitir a la persona común poder subastar su producto.
+                                    Permitir a la persona común poder vender sus creaciones artísticas.
                                 </li>
                                 <br>
                                 <li style="font-family: sans-serif;;line-height : 1;">
                                     <span class="fa-stack fa-lg" style="float: left; color:rgba(255,0,0,0.5);"><i class="fa fa-bullseye fa-stack-2x"></i></span>
-                                    Permitir al usuario poder comprar un producto por medio de subastas online.
+                                    Permitir al usuario poder comprar pinturas por medio de subastas online.
                                 </li>
                                 <br>
                                 <li>
@@ -723,7 +724,7 @@ dropdown-item bg-danger --}}
                                 <br>
                                 <li style="font-family: sans-serif;;line-height : 1;">
                                     <span class="fa-stack fa-lg" style="float: left; color:rgba(255,0,0,0.8);"><i class="fa fa-bullseye fa-stack-2x"></i></span>
-                                    Darle seguridad y comodidad al usuario al momento de hacer una puja o comprar un productos.
+                                    Darle seguridad y comodidad al usuario al momento de hacer una puja o comprar una pintura.
                                 </li>
                             </ul>
                             

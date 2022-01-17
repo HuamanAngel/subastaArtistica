@@ -6,12 +6,13 @@
 }
 
 .main-contenido-central {
-
-
-
+  margin: auto;
   /*background: linear-gradient(to right, #0062E6, #33AEFF);
   */  
     background: url("../img/assets/antique-1125467_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .main-background{
@@ -27,15 +28,14 @@
 
 .cuadro-registro{
   background-color: transparent;
-    border-radius: 10%;
+  border-radius: 10%;
 }
 .style-tarjeta{
 
   border-color: white;
   border-width: 5px;
-  border-style: double;
   border-radius: 10%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(33,37,41);
 
 }
 .lineas-separacion{
