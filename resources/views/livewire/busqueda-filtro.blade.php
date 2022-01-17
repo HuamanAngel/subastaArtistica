@@ -11,11 +11,13 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " wire:model="categoria" class="desplegable">
-                                <option style="background: #c72d32;" value="1">Tecnología</option>
-                                <option style="background: #c72d32;" value="2">Hogar</option>
-                                <option style="background: #c72d32;" value="3">Electrodomésticos</option>
-                                <option style="background: #c72d32;" value="4">Joyas</option>
-                                <option style="background: #c72d32;" value="5">Instrumento musical</option>
+                                @foreach(App\Models\Categoria::all() as $categoria)
+                                    @if($categoria->id == 1)
+                                        <option style="background: #c72d32;" value="{{ $categoria->id }}" selected>{{ $categoria->nombre_categoria }}</option>                        
+                                    @else
+                                        <option style="background: #c72d32;" value="{{ $categoria->id }}">{{ $categoria->nombre_categoria }}</option>                        
+                                    @endif
+                                @endforeach
                             </select>
                         </div>
                     </div>

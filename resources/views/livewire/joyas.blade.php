@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Joyas</option>
+                                <option style="background: #c72d32;">Retratos</option>
                             </select>
                         </div>
                     </div>

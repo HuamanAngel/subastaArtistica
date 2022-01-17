@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Electrodomésticos</option>
+                                <option style="background: #c72d32;">Otros</option>
                             </select>
                         </div>
                     </div>

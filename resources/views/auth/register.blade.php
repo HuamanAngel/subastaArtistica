@@ -145,11 +145,10 @@
                                             autocomplete="new-password">
                                         <label for="inputConfirmPassword">Confirmar Contreseña</label>
                                     </div>
-                                    <div class="form-inline mb-2">
+                                    {{-- <div class="form-inline mb-2">
                                         <input class="mr-2" type="checkbox" value="1" name="suscripcion">
-                                        {{-- <input class="mr-2" type="checkbox" value="0" name="suscripcion" checked> --}}
                                         <label>Deseo suscribirme a D'REMATE</label>
-                                    </div>
+                                    </div> --}}
 
                                     <button class="btn btn-lg btn-primary btn-block text-uppercase"
                                         type="submit">Registrarme</button>

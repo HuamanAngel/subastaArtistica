@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Hogar</option>
+                                <option style="background: #c72d32;">Obras reconocidas</option>
                             </select>
                         </div>
                     </div>

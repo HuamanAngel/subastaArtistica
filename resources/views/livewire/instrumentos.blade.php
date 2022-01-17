@@ -11,7 +11,7 @@
                         <!--Select-->
                         <div class="selector">
                             <select style="color:white " class="desplegable" disabled>
-                                <option style="background: #c72d32;">Instrumentos</option>
+                                <option style="background: #c72d32;">Cuerpo Humano</option>
                             </select>
                         </div>
                     </div>
