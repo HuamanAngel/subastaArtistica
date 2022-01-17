@@ -89,9 +89,9 @@
 
       </div>
     </div>
-    // <!--fin del Contenedor de productos relacionados-->
+    <!--fin del Contenedor de productos relacionados-->
   <br>
-  // <!-- Información del producto -->
+  <!-- Información del producto -->
   <div class="container2">
     <h5 class="categories-product"><a href="#">Categorias</a>  > <a href="#">{{$cat->nombre_categoria}}</a></h5>
     <div class="row">
@@ -185,7 +185,8 @@
             <div style="width: 100%;">
               <div style="width: 100%; float:left;">
                 <div style="margin-right: 160px;">
-                  <h6>Categorías > <a href="{{ route($cat->nombre_categoria) }}"> {{$cat->nombre_categoria}}</a></h6>
+                  {{-- <h6>Categorías > <a href="{{ route($cat->nombre_categoria) }}"> {{$cat->nombre_categoria}}</a></h6> --}}
+                  <h6>Categorías > <a > {{$cat->nombre_categoria}}</a></h6>
                   <h3>{{ $prod->nombre_producto }}</h3>
                 </div>
               </div>
