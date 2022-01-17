@@ -34,7 +34,8 @@ class HomeController extends Controller
     public function index()
     {
         $nombre="casa";
-        return view('home')->with('nombre', $nombre);
+        $productos = App\Models\Producto::all()->sortDesc();
+        return view('paginaPrincipal',compact('nombre','productos'));
     }
     public function valores()
     {

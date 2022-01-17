@@ -3138,3 +3138,14 @@ html.lt-ie-10 * + .range, * + .range {
     text-align:center;
     margin-bottom: 0px;
 }
+
+.carousel-inner{
+    background-color: #6d6d6d62;
+}
+
+.card-img-top{
+    height: 350px;
+}
+.card-title{
+    color: #000;
+}
