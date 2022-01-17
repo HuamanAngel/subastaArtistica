@@ -346,7 +346,7 @@ class HomeController extends Controller
     public function enviarSubasta(Request $request){
 
         $request->validate([
-            'precio_inicial'=>'required|numeric|min:10|regex:/^[\d]{1,3}(\.[\d]{1,2})?$/',
+            'precio_inicial'=>'required|numeric|min:10|max:999999',
             'inicio_subasta'=>'required|date',
             'final_subasta'=>'required|date|after:inicio_subasta'
         ]);
@@ -395,9 +395,7 @@ class HomeController extends Controller
         }
 
         $muestra = 1;
-
-
-        return view('producto',compact('vendedor','prod','pujastotales','usuarios','cat','limitepuja','iniciosubasta','ultimoprecio','ultimapuja','productosRelac','favoritos','muestra'));
+        return redirect()->route('producto.detalles',$prod->id);
     }
     
     public function registroEEE(Request $request)

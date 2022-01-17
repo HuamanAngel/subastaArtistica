@@ -821,7 +821,6 @@
     // in case of inline set to false
     enableUtc: false, //Use UTC as default
     onEnd: function() {
-        alert("La subasta ha finalizado");
         document.getElementById('botonpuja').classList.add('oculta');
         document.getElementById('cantpuja').classList.add('oculta');
         document.getElementById('finalsubasta').classList.add('revelado');

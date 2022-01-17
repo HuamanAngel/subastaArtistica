@@ -165,83 +165,6 @@
         
     }
     @endphp
-<!--
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="{{route("welcome")}}">dRemate</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
-                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                
-                  <form class="form-inline">
-                    <div class="input-group">
-                      <input type="search" class="form-control" placeholder="Nombre de producto" aria-label="Username" aria-describedby="basic-addon1">
-                      <div class="input-group-prepend">
-                            <button type="submit"><i class="fa fa-search fa-lg fa-fw"></i></button> 
-                      </div>
-                    </div>
-                  </form>                  
-                               
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item @if($stringRuta == 'welcome') active  @endif ">
-                        <a class=" nav-link" href="{{ route('welcome') }}">Home
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item @if($stringRuta == 'subastaRapida') active  @endif ">
-                        <a class=" nav-link" href="{{ route('subastaRapida') }}">Subasta rapida
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                    @guest
-                        <li class="nav-item @if($stringRuta == 'login') active  @endif">
-                            <a class="nav-link" href="{{ route('login') }}">Ingresar</a>
-                        </li>
-                        @if (Route::has('register'))
-                            <li class="nav-item @if($stringRuta == 'register') active  @endif">
-                                <a class="nav-link" href="{{ route('register') }}">Registrarse
-                                    <span class="sr-only">(current)</span>
-                                </a>
-                            </li>
-                        @endif
-                    @else
-                        <li class="nav-item dropdown">
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                {{ Auth::user()->usuario }}
-                            </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="{{ route('perfil_us') }}">
-                                    Mi perfil
-                                </a>
-                                <a class="dropdown-item" href="{{ route('logout') }}"
-                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                    {{ __('Logout') }}
-                                </a>
-                                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                    @csrf
-                                </form>
-                            </div>
-                        </li>
-                    @endguest
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Usuario
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right animate slideIn" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Perfil</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Salir</a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>-->
 <!--barra navegación-->
 <div class="navbar-sticky bg-light fixed-top">
     <div class="navbar navbar-expand-lg navbar-expand-sm navbar-light responsive-navbar" style="background:#343a40!important;padding-top: 0px;padding-bottom: 0px;">
@@ -337,7 +260,7 @@
 {{-- "badge badge-danger"
 dropdown-item bg-danger --}}
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                {{-- <form method="POST" action="{{ route('suscripcion.usuario') }}">
+                                <form method="POST" action="{{ route('suscripcion.usuario') }}">
                                     {{ csrf_field() }}
                                     @csrf
                                 @if(Auth::user()->suscripcion == "1")
@@ -345,7 +268,7 @@ dropdown-item bg-danger --}}
                                     <input type="hidden" name="idUsuario" value={{Auth::user()->id}}>
                                     <input type="hidden" name="nameUser" value={{Auth::user()->usuario}}>
                                     <input type="hidden" name="email" value={{Auth::user()->email}}>
-                                    <button type="submit" class="dropdown-item bg-danger text-white text-center">Anular suscripción</button>
+                                    {{-- <button type="submit" class="dropdown-item bg-danger text-white text-center">Anular suscripción</button> --}}
                                     <a class="dropdown-item" href="{{ route('productos.index') }}">
                                         Mi perfil <span class="badge badge-success mr-0">Suscrito</span>
                                     </a>
@@ -353,12 +276,12 @@ dropdown-item bg-danger --}}
                                     <input type="hidden" name="idUsuario" value={{Auth::user()->id}}>
                                     <input type="hidden" name="nameUser" value={{Auth::user()->usuario}}>
                                     <input type="hidden" name="email" value={{Auth::user()->email}}>
-                                    <button type="submit" class="dropdown-item bg-success text-white text-center">Suscribirse</button>
+                                    {{-- <button type="submit" class="dropdown-item bg-success text-white text-center">Suscribirse</button> --}}
                                     <a class="dropdown-item" href="{{ route('productos.index') }}">
                                         Mi perfil
                                     </a>
                                 @endif
-                                </form> --}}
+                                </form>
                                 <a class="dropdown-item" href="{{ route('productos.favoritos') }}">
                                     Mis productos favoritos
                                 </a>
