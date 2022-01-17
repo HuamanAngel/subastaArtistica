@@ -15,9 +15,7 @@ use App\Http\Controllers\HelpController;
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    return view('paginaPrincipal');
-})->name("welcome");
+Route::get('/',[HomeController::class,'index'])->name("welcome");
 
 Route::get('/prueba', function () {
     return view("paginaNT");

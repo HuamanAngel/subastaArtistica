@@ -52,8 +52,40 @@
           <h5><span class="uppercase">Registrate ahora y empieza</span></h5>
           <a class="red button register" href="/register">REGISTRARME</a> 
         @endauth
-        
-        <div class="c-hero__feats">
+
+        <div class="container">
+        <div id="carouselProducts" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselProducts" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselProducts" data-slide-to="1"></li>
+                <li data-target="#carouselProducts" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                <a href="{{ route('producto.detalles', $productos[0]->id) }}"><img class="d-block w-25 mx-auto" src="{{$productos[0]->image_name1}}" alt="{{$productos[0]->nombre_producto}}"></a>
+                <h4>{{$productos[0]->nombre_producto}} - Valor actual: ${{$productos[0]->precio_inicial}} </h4><br>
+                </div>
+                <div class="carousel-item">
+                <a href="{{ route('producto.detalles', $productos[1]->id) }}"><img class="d-block w-25 mx-auto" src="{{$productos[1]->image_name1}}" alt="{{$productos[1]->nombre_producto}}"></a>
+                <h4>{{$productos[1]->nombre_producto}} - Valor actual: ${{$productos[1]->precio_inicial}} </h4><br>
+                </div>
+                <div class="carousel-item">
+                <a href="{{ route('producto.detalles', $productos[2]->id) }}"><img class="d-block w-25 mx-auto" src="{{$productos[2]->image_name1}}" alt="{{$productos[2]->nombre_producto}}"></a>
+                <h4>{{$productos[2]->nombre_producto}} - Valor actual: ${{$productos[2]->precio_inicial}} </h4><br>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselProducts" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselProducts" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+            </div>
+        </div>
+
+        <!-- <div class="c-hero__feats">
             <a href="/subastaRapida" class="c-hero__feat">
                 <img src="http://imgfz.com/i/gVFiRSt.jpeg">
                     <h2>Subastas<br>
@@ -72,7 +104,7 @@
                         Variadas</h2>
                         <span>Conoce más</span>
             </a>
-        </div>
+        </div> -->
     </div>
 </div>
 
@@ -169,8 +201,38 @@
             <strong>¿Qué es una subasta en vivo?</strong><br>Las subastas en vivo son eventos de transmisión simultánea que permiten a las personas ofertar por artículos en línea. Con las ofertas en vivo, puede acceder a las subastas de todo el mundo directamente desde su propia computadora. ¡Simplemente conviértase en miembro y estará listo para ofertar!
             </p>
             </div>
+        </div><br><br>
+    <h4>Te puede interesar</h4>    
+    </div class="container-md" >
+    
+        <div class="card-group row justify-content-md-center" style="padding:30px;">
+        <div class="card">
+            <a href="{{ route('producto.detalles', $productos[3]->id) }}"><img class="card-img-top" src="{{$productos[3]->image_name1}}" alt="Card image cap" height="300"></a>
+            <div class="card-body">
+            <h5 class="card-title">{{$productos[3]->nombre_producto}}</h5>
+            <p class="card-text">{{$productos[3]->descripcion}}</p>
+            
+            </div>
         </div>
-    </div>
+        <div class="card">
+            <a href="{{ route('producto.detalles', $productos[4]->id) }}"><img class="card-img-top" src="{{$productos[4]->image_name1}}" alt="Card image cap" height="300"></a>
+            <div class="card-body">
+            <h5 class="card-title">{{$productos[4]->nombre_producto}}</h5>
+            <p class="card-text">{{$productos[4]->descripcion}}</p>
+            
+            </div>
+        </div>
+        <div class="card">
+            <a href="{{ route('producto.detalles', $productos[5]->id) }}"><img class="card-img-top" src="{{$productos[5]->image_name1}}" alt="Card image cap" height="300"></a> 
+            <div class="card-body">
+            <h5 class="card-title">{{$productos[5]->nombre_producto}}</h5>
+            <p class="card-text">{{$productos[5]->descripcion}}</p>
+            
+            </div>
+        </div>
+        </div>
+
+
 </section>
 
 {{-- <section class="c-callout" style="background-color: #000000;;">
