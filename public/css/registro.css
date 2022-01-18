@@ -25,7 +25,9 @@ body{
     height:10px;
 }
 #parrafo{
-    margin-left: 20px;
+    padding-top: 30px;
+    margin-bottom: 0px;
+    text-align: center;
 }
 #center{
     float: none;
@@ -52,7 +54,7 @@ body{
     /*position:relative;*/
     border:1px solid rgba(255,255,255,0.4);
     background: rgba(29,3,4,0.75);
-    @include border-radius(6px);
+    border-radius: 6px;
     cursor:pointer;
     
 }
@@ -68,3 +70,17 @@ body{
 #inputmapa:hover{
     cursor:default;
 }
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Merriweather', serif;
+}
+

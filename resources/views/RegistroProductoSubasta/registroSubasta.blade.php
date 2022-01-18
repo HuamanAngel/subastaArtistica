@@ -14,14 +14,19 @@
     <link rel="stylesheet" href="{{ asset('css/registro.css') }}" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin=""/>
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital,wght@1,300;1,400;1,700&display=swap" rel="stylesheet">
+    
 @endsection
 
 
 @section('contenido')
 
 <div class="container-md border rounded-lg cuerpo">
-    <h1 class="text-center">Registrar y subastar producto</h1>
-    <p id="parrafo">Llena los datos del producto y subasta para empezar :)</p>
+    <h1 class="text-center">Subastar producto</h1>
+
+    <p id="parrafo">Ingrese la información de su pintura</p>
     <div class="row">
         
         <!-- Aquí va la información del producto -->
@@ -30,7 +35,7 @@
             <form class="needs-validation" method="POST" enctype="multipart/form-data"  action="{{ route('producto.registroee')}}" novalidate>
                 {{csrf_field()}}
                 @csrf
-                <div class="col-sm-12">
+                <!-- <div class="col-sm-12">
                     <label for="formGroupExampleInput"><h3>Categoría</h3></label><br>
                     <small>Escoja su categoría</small>
                     <select name="categoria_id" class="form-control" required>
@@ -41,11 +46,11 @@
                         <option value="5">Instrumento musical</option>
                     </select>
                     <div class="invalid-feedback">
-                        Seleccione una cateroría
+                        Seleccione una categoría
                     </div>
                     <br>
                     <div class="linea"></div>
-                </div>
+                </div> -->
         
                 <div class="col-sm-12">
                     <label for="formGroupExampleInput"><h3>Título</h3></label><br>
@@ -99,7 +104,7 @@
                     <div class="linea"></div>
                 </div>
             
-                <div class="col-sm-12">
+                <!-- <div class="col-sm-12">
                     <h3>Condicion</h3>
                     <select class="form-control" name="condicion">
                         <option value="Nuevo" selected>Nuevo</option> 
@@ -107,7 +112,7 @@
                     </select>
                     <br>
                     <div class="linea"></div>
-                </div>   
+                </div>    -->
                 <div class="col-sm-12">
                     <h3>Agregar fotos</h3>
                     <small class="form-text text-muted">Una imagen vale más que mil palabras</small>
@@ -179,7 +184,7 @@
                 <small class="form-text text-muted">Ingrese la cantidad en Soles (S/) y máximo con dos decimales. Ejemplo: 25.50</small>
                 @error('precio_inicial')
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                Precio mínimo 10.00 - Precio máximo 999.99
+                Por favor ingrese un precio
                 <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -298,10 +303,10 @@
                             </button>
                         </div>
                 @enderror
-                <input type="text" name="distrito" value="{{ old('distrito') }}" class="form-control m-2" placeholder="Ubicación adicional">
+                <input type="text" name="distrito" value="{{ old('distrito') }}" class="form-control mt-2 mb-4" placeholder="Ubicación adicional">
             </div>
 
-            <div>
+            <!-- <div>
                 <h3>Garantía</h3>
                 @error('garantia')
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -314,7 +319,7 @@
                 <small class="form-text text-muted">Brinda detalles de tu garantía</small>
                 <textarea input id="validationCustom05" name="garantia" id="" class="form-control" cols="30" rows="3" placeholder="Detalla la garantía" required>{{ old('garantia') }}</textarea>
                 <br>
-            </div>
+            </div> -->
     
             <div id="center">
             
