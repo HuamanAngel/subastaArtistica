@@ -97,13 +97,14 @@
                 </div>
                 
                 <div class="col-sm-12">
-                    <h3>Estado</h3>
-                    <select class="form-control" name="estado">
+                    {{-- <h3>Estado</h3> --}}
+                    <input type="hidden" name="estado" value="Disponible">
+                    {{-- <select class="form-control" name="estado">
                         <option value="Disponible" selected>Disponible</option> 
                         <option value="No disponible">No disponible</option>
                         <option value="En curso">En curso</option>
                     </select>
-                    <br/>
+                    <br/> --}}
                     <div class="linea"></div>
                 </div>
             

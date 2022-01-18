@@ -41,11 +41,13 @@
                     </label><br>
                     <small>Escoja su categoría</small>
                     <select name="categoria_id" class="form-control" required>
-                        <option value="1" selected>Tecnología</option>
-                        <option value="2">Hogar</option>
-                        <option value="3">Electrodomésticos</option>
-                        <option value="4">Joyas</option>
-                        <option value="5">Instrumento musical</option>
+                        @foreach(App\Models\Categoria::all() as $categoria)
+                            @if($categoria->id == 1)
+                                <option value="{{ $categoria->id }}" selected>{{ $categoria->nombre_categoria }}</option>                        
+                            @else
+                                <option value="{{ $categoria->id }}">{{ $categoria->nombre_categoria }}</option>                        
+                            @endif
+                        @endforeach
                     </select>
                     <div class="invalid-feedback">
                         Seleccione una categoría
@@ -100,23 +102,25 @@
                 </div>
 
                 <div class="col-sm-12">
-                    <h3>Estado</h3>
-                    <select class="form-control" name="estado">
+                    {{-- <h3>Estado</h3> --}}
+                    <input type="hidden" name="estado" value="Disponible">
+                    {{-- <select class="form-control" name="estado">
                         <option value="Disponible" selected>Disponible</option>
                         <option value="No disponible">No disponible</option>
                         <option value="En curso">En curso</option>
-                    </select>
+                    </select> --}}
                     <br>
                     <div class="linea"></div>
                 </div>
 
                 <div class="col-sm-12">
-                    <h3>Condicion</h3>
-                    <select class="form-control" name="condicion">
+                    {{-- <h3>Condicion</h3> --}}
+                    <input type="hidden" name="condicion" value="Nuevo">
+                    {{-- <select class="form-control" name="condicion">
                         <option value="Nuevo" selected>Nuevo</option>
                         <option value="Usado">Usado</option>
-                    </select>
-                    <br><br>
+                    </select> --}}
+                    {{-- <br><br> --}}
                     <div class="linea"></div>
                 </div>
 
