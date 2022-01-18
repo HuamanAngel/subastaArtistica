@@ -107,7 +107,7 @@
         </div> -->
     </div>
 </div>
-
+<br>
 <section class="c-callout" style="background-color: #000000;;">
     <div class="c-callout__wrap">
         <span class="c-callout__icon" style="background-image:url(https://auctionhouselondon.co.uk/wp-content/uploads/2015/11/newsletter-3.png);">
@@ -201,7 +201,116 @@
             <strong>¿Qué es una subasta en vivo?</strong><br>Las subastas en vivo son eventos de transmisión simultánea que permiten a las personas ofertar por artículos en línea. Con las ofertas en vivo, puede acceder a las subastas de todo el mundo directamente desde su propia computadora. ¡Simplemente conviértase en miembro y estará listo para ofertar!
             </p>
             </div>
-        </div><br><br>
+        </div>
+        <h4>Más populares</h4>  <br>
+        <div class="container" >
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active recomendados">
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto carousel-item-flex" src="{{$productos[1]->image_name1}}" alt="{{$productos[1]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                                <h5 class="card-title">{{$productos[1]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[1]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[1]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto" src="{{$productos[7]->image_name1}}" alt="{{$productos[3]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                            <h5 class="card-title">{{$productos[7]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[7]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[7]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto" src="{{$productos[5]->image_name1}}" alt="{{$productos[5]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                            <h5 class="card-title">{{$productos[5]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[5]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[5]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item recomendados">
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto" src="{{$productos[2]->image_name1}}" alt="{{$productos[2]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                            <h5 class="card-title">{{$productos[2]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[2]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[2]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto" src="{{$productos[4]->image_name1}}" alt="{{$productos[4]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                            <h5 class="card-title">{{$productos[4]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[4]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[4]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="single-box">
+                                        <div class="img-area">
+                                            <img class="d-block w-25 mx-auto" src="{{$productos[0]->image_name1}}" alt="{{$productos[0]->nombre_producto}}">
+                                        </div>
+                                        <div class="img-text">
+                                            <h5 class="card-title">{{$productos[0]->nombre_producto}}</h5>
+                                            <p class="card-text">{{$productos[0]->descripcion}}</p>
+                                            <div class="col text-center">
+                                                <a href="{{ route('producto.detalles', $productos[0]->id) }}" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Ver más</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        
+        <br><br>
     <h4>Te puede interesar</h4>    
     </div class="container-md" >
     

@@ -3149,3 +3149,18 @@ html.lt-ie-10 * + .range, * + .range {
 .card-title{
     color: #000;
 }
+
+.carousel-item.active.recomendados{
+    display: flex;
+    padding: 2em;
+}
+
+.recomendados{
+    display: none;
+    padding: 2em;
+}
+
+.v-center{
+    justify-content: center;
+    align-items: center;
+}
