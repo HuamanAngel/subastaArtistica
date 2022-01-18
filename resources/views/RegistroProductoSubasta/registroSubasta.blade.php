@@ -32,6 +32,7 @@
         <!-- Aquí va la información del producto -->
         <div class="col-sm-12 col-md-6 colum">
             <h2>Información del producto</h2>
+            <br/>
             <form class="needs-validation" method="POST" enctype="multipart/form-data"  action="{{ route('producto.registroee')}}" novalidate>
                 {{csrf_field()}}
                 @csrf
@@ -70,7 +71,7 @@
                     <div class="valid-feedback">
                         ¡Bien!
                     </div>
-                    <br>
+                    <br/>
                     <div class="linea"></div>
                 </div>
         
@@ -89,7 +90,7 @@
                     <div class="invalid-feedback">
                         Es necesaria una descripción
                     </div>
-                    <br>
+                    <br/>
                     <div class="linea"></div>
                 </div>
                 
@@ -100,7 +101,7 @@
                         <option value="No disponible">No disponible</option>
                         <option value="En curso">En curso</option>
                     </select>
-                    <br>
+                    <br/>
                     <div class="linea"></div>
                 </div>
             
@@ -163,7 +164,7 @@
                     <div class="form-group">
                         <input type="file" name="image_name4" class="form-control" id="name4" value="" required>
                     </div>      
-                    <br>
+                    <br/>
                     <div class="linea"></div>
                 </div>  
 
@@ -178,7 +179,7 @@
         <div class="col-sm-12 col-md-6 col-lg-5">-->
         <div class="col-sm-12 col-md-6 colum">
             <h2>Información de la subasta</h2>
-            <br>
+            <br/>
             <div>
                 <label for="formGroupExampleInput"><h3>Precio inicial</h3></label>
                 <small class="form-text text-muted">Ingrese la cantidad en Soles (S/) y máximo con dos decimales. Ejemplo: 25.50</small>
@@ -197,7 +198,7 @@
                 <div class="valid-feedback">
                     Nice!
                 </div>
-                <br>
+                <br/>
                 <div class="linea"></div>
             </div>
             
@@ -221,7 +222,7 @@
                         <div class="valid-feedback">
                             ¡Bien!
                         </div>
-                        <br>
+                        <br/>
                         <div class="linea"></div>
                     </div>
                 </div>
@@ -326,7 +327,7 @@
                 <div id="siguiente">
                     <button type="submit" class="btn btn-success btn-block">Registrar y Subastar Producto</button>
                 </div>
-                <br>
+                <br/>
             </div>
             </form>
             <a href="{{ url('/menuSubasta') }}" class="btn btn-danger btn-block" style="text-decoration: none; color:white;">Cancelar</a>
